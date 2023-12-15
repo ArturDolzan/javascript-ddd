@@ -1,0 +1,15 @@
+env:
+  commonjs: true
+  es2021: true
+  node: true
+extends: google
+parser: '@babel/eslint-parser'
+parserOptions:
+  ecmaVersion: latest
+  babelOptions:
+    plugins:
+      - ['@babel/plugin-proposal-decorators', { 'legacy': true }]
+rules:
+  require-jsdoc: off
+  valid-jsdoc: off
+  max-len: ["error", { "code": 120 }]
